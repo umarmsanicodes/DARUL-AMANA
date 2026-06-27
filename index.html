@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>DARUL-AMANA WAL IHSAN — Guardians in Egypt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=icon>☪</div>'">
+            <div>
+                <div class="name">DARUL-AMANA WAL IHSAN</div>
+                <div class="tagline">Guardians in Egypt</div>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#enroll">Contact</a></li>
+        </ul>
+        <a href="#enroll" class="nav-enroll">Apply Now</a>
+        <div class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#programs" onclick="toggleMenu()">Programs</a>
+        <a href="#schedule" onclick="toggleMenu()">Schedule</a>
+        <a href="#teachers" onclick="toggleMenu()">Teachers</a>
+        <a href="#facilities" onclick="toggleMenu()">Facilities</a>
+        <a href="#enroll" onclick="toggleMenu()">Enroll</a>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+            <div class="hero-badge">✦ Established for the Ummah ✦</div>
+            <h1>DARUL-AMANA <span class="gold">WAL IHSAN</span><br>Guardians in Egypt</h1>
+            <p class="hero-subtitle">حفظ القرآن الكريم</p>
+            <p class="hero-desc">A full-time Guardians for ages 10–20 offering a complete Quran memorization program in 3+ years. Separate sections for boys and girls. 3 meals daily. Safe,And Any School In Cairo (EGYPT) and Islamic environment.</p>
+            <div class="hero-btns">
+                <a href="#enroll" class="btn-primary">Enroll Your Child</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">Years to Full Hifz</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">10–20</div>
+                    <div class="stat-label">Age Range</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">3×</div>
+                    <div class="stat-label">Meals Per Day</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">2</div>
+                    <div class="stat-label">Boys & Girls Sections</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">SCROLL</div>
+    </section>
+
+    <!-- ========== GALLERY MARQUEE ========== -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-header">
+            <h2 class="gallery-title">📸 <span>Our Campus</span> & Facilities</h2>
+            <p class="gallery-desc">A glimpse into the daily life and environment at DARUL-AMANA WAL IHSAN</p>
+        </div>
+        <div class="marquee-outer">
+            <div class="marquee-track" id="marqueeTrack"></div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about-section" id="about">
+        <div class="about-grid">
+            <div class="about-text">
+                <div class="section-eyebrow">About Us</div>
+                <h2>Nurturing <span>Huffaz</span> Since Day One</h2>
+                <p>DARUL-AMANA WAL IHSAN is a premier full-time Guardians school dedicated to helping children from any country memorize the Holy Quran in a structured, safe, and spiritually enriching environment.</p>
+                <p>We welcome students aged 10 to 20 into our boys' and girls' sections, providing 24-hour supervision, three daily meals, comfortable dormitories, and a rigorous 3+ year Hifz program guided by qualified teachers.</p>
+                <div class="about-features">
+                    <div class="feature-row"><div class="dot"></div>Full Quran memorization</div>
+                    <div class="feature-row"><div class="dot"></div>Separate boys and girls sections</div>
+                    <div class="feature-row"><div class="dot"></div>Feeding Food Daily</div>
+                    <div class="feature-row"><div class="dot"></div>Comfortable Guardians facilities</div>
+                    <div class="feature-row"><div class="dot"></div>Qualified Quran teachers</div>
+                    <div class="feature-row"><div class="dot"></div>Friday sports and recreation</div>
+                </div>
+            </div>
+            <div class="about-cards">
+                <div class="glass-card about-stat-card">
+                    <div class="icon">📖</div>
+                    <div class="num">60</div>
+                    <div class="lbl">Hizib Memorized</div>
+                </div>
+                <div class="glass-card about-stat-card">
+                    <div class="icon">🕌</div>
+                    <div class="num">3+</div>
+                    <div class="lbl">Years Program</div>
+                </div>
+                <div class="glass-card about-stat-card">
+                    <div class="icon">🇪🇬</div>
+                    <div class="num">EGY</div>
+                    <div class="lbl">Based in Egypt</div>
+                </div>
+                <div class="glass-card about-stat-card">
+                    <div class="icon">🤲</div>
+                    <div class="num">100%</div>
+                    <div class="lbl">Islamic Environment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROGRAMS ========== -->
+    <section class="programs-section" id="programs">
+        <div class="gold-divider"></div>
+        <div class="section-eyebrow" style="justify-content:center">Our Programs</div>
+        <h2 class="section-title">What We <span>Offer</span></h2>
+        <p class="section-desc">Choose from our flagship Hifz program, or combine it with formal schooling through our optional Any School In Cairo (EGYPT).</p>
+        <div class="programs-grid">
+            <div class="glass-card program-card">
+                <div class="prog-icon">📖</div>
+                <h3>Full Quran Memorization</h3>
+                <p>Our flagship 3+ year Hifz program covering all 60 Hizib. Students recite daily to qualified teachers with tajweed correction and regular revision schedules.</p>
+                <span class="tag tag-gold">Core Program</span>
+            </div>
+            <div class="glass-card program-card">
+                <div class="prog-icon">🎓</div>
+                <h3>Any School In Cairo (EGYPT) Pathway <span style="font-size:10px;color:#7ab8e0;">(Optional)</span></h3>
+                <p>For families who wish, students can also attend any school in Cairo — combining Quran memorization with a formal academic qualification.</p>
+                <span class="tag tag-optional">Optional Add-On</span>
+            </div>
+            <div class="glass-card program-card">
+                <div class="prog-icon">👦</div>
+                <h3>Boys Section</h3>
+                <p>A dedicated male environment with male teachers, supervised dormitories, and a structured daily routine designed for focus and spiritual growth.</p>
+                <span class="tag tag-blue">Boys Only</span>
+            </div>
+            <div class="glass-card program-card">
+                <div class="prog-icon">👧</div>
+                <h3>Girls Section</h3>
+                <p>A fully separate female environment with female staff, comfortable facilities, and the same high-quality Hifz program in a modest, safe setting.</p>
+                <span class="tag tag-blue">Girls Only</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== AL-AZHAR OPTIONAL ========== -->
+    <section class="azhar-section" id="azhar">
+        <div class="azhar-box">
+            <div class="azhar-badge">✦ Optional Pathway</div>
+            <h2>Any School In Cairo (EGYPT) <span>Secondary & University</span></h2>
+            <p>This is an <strong style="color:var(--gold);">optional</strong> program for parents who want their child to combine Quran memorization with formal schooling. While the student studies at any school in Cairo, we fully manage their Quran schedule, daily meals, accommodation, and academic support — so they can do both without compromise.</p>
+            <div class="azhar-path">
+                <div class="azhar-step"><span class="s-icon">🏫</span> Hifz at Our Academy</div>
+                <div class="azhar-arrow">→</div>
+                <div class="azhar-step"><span class="s-icon">📚</span> Any School In Cairo</div>
+                <div class="azhar-arrow">→</div>
+                <div class="azhar-step"><span class="s-icon">🎓</span> Any University (Egypt)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DAILY SCHEDULE ========== -->
+    <section class="schedule-section" id="schedule">
+        <div class="gold-divider"></div>
+        <div class="section-eyebrow" style="justify-content:center">Daily Routine</div>
+        <h2 class="section-title">A Day in the <span>Life</span></h2>
+        <p class="section-desc">Every student follows a structured, balanced daily schedule that combines Quran memorization, school, rest, and prayer.</p>
+        <div class="schedule-grid">
+            <div class="glass-card schedule-card">
+                <h3>🌅 Weekday Schedule</h3>
+                <div class="sched-list">
+                    <div class="sched-item">
+                        <div class="sched-time">Fajr</div>
+                        <div class="sched-info"><div class="sched-act">Fajr Prayer + Morning Azkar</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">7:30 AM</div>
+                        <div class="sched-info"><div class="sched-act">Breakfast (Meal 1)</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">8:00 AM</div>
+                        <div class="sched-info">
+                            <div class="sched-act">Those going to school should go — those staying have Quran Lesson</div>
+                            <div class="sched-sub">Optional — for enrolled students only</div>
+                        </div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">12:00 PM</div>
+                        <div class="sched-info"><div class="sched-act">Return from School + Lunch (Meal 2)</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">1:00–2:00</div>
+                        <div class="sched-info"><div class="sched-act">Rest / Quiet Time</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">2:00–4:00</div>
+                        <div class="sched-info"><div class="sched-act">Quran Hifz Session</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">4:00 PM</div>
+                        <div class="sched-info"><div class="sched-act">Asr Prayer + Break</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">After Maghrib</div>
+                        <div class="sched-info">
+                            <div class="sched-act">Homework + Revision</div>
+                            <div class="sched-sub">Under teacher supervision</div>
+                        </div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">Isha</div>
+                        <div class="sched-info"><div class="sched-act">Isha Prayer + Dinner (Meal 3) + Sleep</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card schedule-card">
+                <h3>🏆 Friday Schedule</h3>
+                <div class="sched-list">
+                    <div class="sched-item">
+                        <div class="sched-time">Morning</div>
+                        <div class="sched-info"><div class="sched-act">Quran Revision & Recitation</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">Jumu'ah</div>
+                        <div class="sched-info"><div class="sched-act">Friday Prayer</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">Afternoon</div>
+                        <div class="sched-info"><div class="sched-act">⚽ Football & Sports Day</div></div>
+                    </div>
+                    <div class="sched-item">
+                        <div class="sched-time">Evening</div>
+                        <div class="sched-info"><div class="sched-act">Free Time + Quran Review</div></div>
+                    </div>
+                </div>
+                <div class="sched-special">
+                    <h4>⚽ Friday Sports Activities</h4>
+                    <p>Every Friday afternoon is dedicated to physical activities including football, outdoor games, and team sports — keeping students healthy, happy, and balanced.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FACILITIES ========== -->
+    <section class="facilities-section" id="facilities">
+        <div class="gold-divider"></div>
+        <div class="section-eyebrow" style="justify-content:center">Facilities</div>
+        <h2 class="section-title">Everything Your Child <span>Needs</span></h2>
+        <p class="section-desc">We provide a complete, comfortable boarding environment so students can focus entirely on their Quran.</p>
+        <div class="facilities-grid">
+            <div class="glass-card facility-card">
+                <div class="fac-icon">🛏️</div>
+                <h3>Boys Dormitory</h3>
+                <p>Clean, safe, supervised boarding rooms for male students with 24-hour care.</p>
+            </div>
+            <div class="glass-card facility-card">
+                <div class="fac-icon">🛏️</div>
+                <h3>Girls Dormitory</h3>
+                <p>Fully separate, secure accommodation for female students under the care of female supervisors.</p>
+            </div>
+            <div class="glass-card facility-card">
+                <div class="fac-icon">🍽️</div>
+                <h3>3 Meals Daily</h3>
+                <p>Nutritious halal breakfast, lunch, and dinner prepared on-site — no student goes hungry.</p>
+            </div>
+            <div class="glass-card facility-card">
+                <div class="fac-icon">📚</div>
+                <h3>Quran Classrooms</h3>
+                <p>Dedicated Hifz halls where students recite to teachers in a calm, focused atmosphere.</p>
+            </div>
+            <div class="glass-card facility-card">
+                <div class="fac-icon">⚽</div>
+                <h3>Sports Ground</h3>
+                <p>Outdoor space for Friday football, recreation, and physical activities to keep students active.</p>
+            </div>
+            <div class="glass-card facility-card">
+                <div class="fac-icon">🕌</div>
+                <h3>On-Site Mosque</h3>
+                <p>Students pray all five daily prayers in congregation, building strong Islamic habits and community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SPORTS ========== -->
+    <section class="sports-section" id="sports">
+        <div class="sports-header">
+            <div class="friday-badge">🏆 Friday Sports Day</div>
+            <h2 class="section-title">Active Body, <span>Focused Mind</span></h2>
+            <p class="section-desc">Every Friday afternoon is reserved for fun, team sports, and physical activities.</p>
+        </div>
+        <div class="sports-grid">
+            <div class="glass-card sport-card">
+                <div class="sport-img"><img src="images/football-1.jpg" alt="Football" onerror="this.style.display='none';this.parentElement.innerHTML='⚽'"></div>
+                <h3>Football</h3>
+                <p>Team matches every Friday — students vs students, building teamwork and sportsmanship.</p>
+            </div>
+            <div class="glass-card sport-card">
+                <div class="sport-img"><img src="images/football-2.jpg" alt="Athletics" onerror="this.style.display='none';this.parentElement.innerHTML='🏃'"></div>
+                <h3>Athletics & Games</h3>
+                <p>Running, outdoor games, and group activities to keep every student healthy and energized.</p>
+            </div>
+            <div class="glass-card sport-card">
+                <div class="sport-img" style="font-size:40px;">⚽</div>
+                <h3>Recreation</h3>
+                <p>Free time for students to relax, bond with classmates, and recharge for the week ahead.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEACHERS ========== -->
+    <section class="teachers-section" id="teachers">
+        <div class="gold-divider"></div>
+        <div class="section-eyebrow" style="justify-content:center">Our Teachers</div>
+        <h2 class="section-title">Guided by <span>Qualified Scholars</span></h2>
+        <p class="section-desc">Our Quran teachers are experienced huffaz dedicated to nurturing every student's memorization journey.</p>
+        <div class="teachers-grid">
+            <div class="glass-card teacher-card">
+                <div class="teacher-img"><img src="images/teacher-1.jpg" alt="Teacher 1" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍🏫'"></div>
+                <h3>Ustaz Ysufuf Lawan Sulaiman</h3>
+                <div class="role">Senior Quran Teacher</div>
+                <p>A certified hafiz with over 10+ years of experience teaching Quran memorization and tajweed to young students.</p>
+            </div>
+            <div class="glass-card teacher-card">
+                <div class="teacher-img"><img src="images/teacher-2.jpg" alt="Teacher 2" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍🏫'"></div>
+                <h3>Shaikh Adil Abdul Hamid</h3>
+                <div class="role">Senior Fiqh & Hadith</div>
+                <p>A dedicated scholar specializing in Islamic jurisprudence and Hadith studies.</p>
+            </div>
+            <div class="glass-card teacher-card">
+                <div class="teacher-img"><img src="images/teacher-3.jpg" alt="Teacher 3" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍🏫'"></div>
+                <h3>Shaikh Muhammad Abdul Hamid</h3>
+                <div class="role">Senior English / Maths</div>
+                <p>A dedicated teacher specializing in English and Mathematics for young students.</p>
+            </div>
+            <div class="glass-card teacher-card">
+                <div class="teacher-img"><img src="images/teacher-4.jpg" alt="Teacher 4" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍🏫'"></div>
+                <h3>Shaikh AL-Fadil</h3>
+                <div class="role">Senior Quran Teacher</div>
+                <p>A dedicated hafiz specializing in Quran memorization and tajweed for young students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STUDENTS ========== -->
+    <section class="students-section" id="students">
+        <div class="gold-divider"></div>
+        <div class="section-eyebrow" style="justify-content:center">Our Students</div>
+        <h2 class="section-title">Meet Our <span>Future Huffaz</span></h2>
+        <p class="section-desc">Students from across Nigeria and Africa, united by one mission — memorizing the Book of Allah.</p>
+        <div class="students-grid">
+            <div class="glass-card student-card">
+                <div class="student-img"><img src="images/student-1.jpg" alt="Student 1" onerror="this.style.display='none';this.parentElement.innerHTML='👦'"></div>
+            </div>
+            <div class="glass-card student-card">
+                <div class="student-img"><img src="images/student-2.jpg" alt="Student 2" onerror="this.style.display='none';this.parentElement.innerHTML='👧'"></div>
+            </div>
+            <div class="glass-card student-card">
+                <div class="student-img"><img src="images/student-3.jpg" alt="Student 3" onerror="this.style.display='none';this.parentElement.innerHTML='👦'"></div>
+            </div>
+            <div class="glass-card student-card">
+                <div class="student-img"><img src="images/student-4.jpg" alt="Student 4" onerror="this.style.display='none';this.parentElement.innerHTML='👧'"></div>
+            </div>
+            <div class="glass-card student-card">
+                <div class="student-img"><img src="images/student-5.jpg" alt="Student 5" onerror="this.style.display='none';this.parentElement.innerHTML='👦'"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRINCIPAL ========== -->
+    <section class="principal-section" id="principal">
+        <div class="principal-box">
+            <div class="principal-img-wrap">
+                <div class="principal-img"><img src="images/principal.jpg" alt="Principal" onerror="this.style.display='none';this.parentElement.innerHTML='👨‍💼'"></div>
+                <div class="principal-title">RA'IS & FOUNDER</div>
+            </div>
+            <div class="principal-msg">
+                <h3>A Message from Our RA'IS</h3>
+                <div class="arabic">جَعَلَنَا اللَّهُ مِن حَمَلَةِ كِتَابِهِ</div>
+                <p>We established DARUL-AMANA WAL IHSAN with one vision: to give every Muslim child the opportunity to memorize the Book of Allah in a safe, loving,If You Want Any School In Cairo (EGYPT) AND students are not just memorizing words — they are building their character, their faith, and their future. We welcome your child into our family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENROLL / APPLY NOW ========== -->
+    <section class="enroll-section" id="enroll">
+        <div class="enroll-box">
+            <div class="gold-divider"></div>
+            <h2>Enroll Your <span>Child Today</span></h2>
+            <p>Spaces are limited. Contact us to learn more or register your child for the next intake.</p>
+            <form class="enroll-form" id="enrollForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Student's Full Name *</label>
+                        <input type="text" id="studentName" placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Parent / Guardian Name *</label>
+                        <input type="text" id="parentName" placeholder="e.g. Alhaji...." required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="phoneNumber" placeholder="+234 800 000 0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Student's Age *</label>
+                        <input type="number" id="studentAge" placeholder="10 – 20" min="10" max="20" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Section *</label>
+                        <select id="section">
+                            <option value="">Select Section</option>
+                            <option value="Boys Section">Boys Section</option>
+                            <option value="Girls Section">Girls Section</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Program (Optional)</label>
+                        <select id="azharOption">
+                            <option value="Hifz Only">Hifz Only</option>
+                            <option value="Hifz + School">Hifz + Any Secondary School</option>
+                            <option value="Hifz + University">Hifz + Any University Path</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Message / Questions</label>
+                    <textarea id="message" placeholder="Any questions for us? Write here..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit" id="submitBtn">Apply Now →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="name">☪ DARUL-AMANA WAL IHSAN</div>
+                <p>Nigeria's premier full-time Quran memorization boarding school. Nurturing huffaz from ages 10–20 in a safe, structured, and Islamic environment.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#schedule">Daily Schedule</a></li>
+                    <li><a href="#teachers">Teachers</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#enroll">Enroll</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+2348101562471">📞 +234 810 156 2471</a></li>
+                    <li><a href="mailto:info@darulamanah165@gmail.com">✉️ info@darulamanah165@gmail.com</a></li>
+                    <li><a href="#">📍 Egypt</a></li>
+                    <li><a href="#">🕌 Open to all Muslims</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <span>DARUL AMANA WAL IHSAN</span> · All Rights Reserved · Built with ❤️ for the Ummah</p>
+        </div>
+    </footer>
+
+    <!-- ========== WHATSAPP FLOAT BUTTON ========== -->
+    <a href="https://wa.me/201229403525" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
