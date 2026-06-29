@@ -1,5 +1,5 @@
 // ============================================================
-// MOBILE MENU TOGGLE - FIXED (HANBUGER YANA AIKI)
+// MOBILE MENU TOGGLE
 // ============================================================
 function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
@@ -8,7 +8,6 @@ function toggleMenu() {
     }
 }
 
-// Close menu when a link is clicked
 document.querySelectorAll('.mobile-menu a').forEach(function(link) {
     link.addEventListener('click', function(e) {
         const menu = document.getElementById('mobileMenu');
@@ -18,7 +17,6 @@ document.querySelectorAll('.mobile-menu a').forEach(function(link) {
     });
 });
 
-// Close menu when clicking outside (optional)
 document.addEventListener('click', function(e) {
     const menu = document.getElementById('mobileMenu');
     const hamburger = document.getElementById('hamburgerBtn');
@@ -39,11 +37,15 @@ document.getElementById('enrollForm').addEventListener('submit', function(e) {
     const parentName = document.getElementById('parentName').value.trim();
     const phone = document.getElementById('phoneNumber').value.trim();
     const age = document.getElementById('studentAge').value.trim();
+    const country = document.getElementById('country').value.trim();
+    const stateProvince = document.getElementById('stateProvince').value.trim();
     const section = document.getElementById('section').value;
-    const azhar = document.getElementById('azharOption').value;
     const message = document.getElementById('message').value.trim();
 
-    if (!studentName || !parentName || !phone || !age || !section) {
+    const eduCheckboxes = document.querySelectorAll('input[name="education"]:checked');
+    const educationLevels = Array.from(eduCheckboxes).map(cb => cb.value).join(', ') || 'Not specified';
+
+    if (!studentName || !parentName || !phone || !age || !country || !stateProvince || !section) {
         alert('Please fill in all required fields (marked with *).');
         return;
     }
@@ -53,8 +55,10 @@ document.getElementById('enrollForm').addEventListener('submit', function(e) {
         '👨‍👩‍👦 *Parent/Guardian:* ' + parentName + '\n' +
         '📞 *Phone:* ' + phone + '\n' +
         '📅 *Age:* ' + age + '\n' +
+        '🌍 *Country:* ' + country + '\n' +
+        '📍 *State/Province:* ' + stateProvince + '\n' +
         '🏫 *Section:* ' + section + '\n' +
-        '🎓 *Program:* ' + azhar + '\n' +
+        '📚 *Education Level(s):* ' + educationLevels + '\n' +
         '📝 *Message:* ' + (message || 'N/A') + '\n\n' +
         'Sent from DARUL-AMANA WAL IHSAN website.';
 
@@ -81,59 +85,10 @@ document.getElementById('enrollForm').addEventListener('submit', function(e) {
 });
 
 // ============================================================
-// GALLERY MARQUEE — FIXED (galary-1.jpg to galary-12.jpg)
-// ============================================================
-(function initGallery() {
-    var track = document.getElementById('marqueeTrack');
-    if (!track) return;
-
-    var colors = [
-        '#0a1a2a', '#0f2a3f', '#0a1928', '#132a4a',
-        '#0b1b3a', '#1a2a3a', '#0a1525', '#152a3f',
-        '#081a2a', '#1a2a4a', '#0a1a3a', '#102a3a'
-    ];
-
-    var images = [];
-    for (var i = 1; i <= 12; i++) {
-        var color = colors[(i - 1) % colors.length];
-        images.push({
-            src: 'galary-' + i + '.jpg',
-            color: color,
-            label: 'galary-' + i + '.jpg'
-        });
-    }
-
-    var allImages = images.concat(images);
-
-    for (var j = 0; j < allImages.length; j++) {
-        var imgData = allImages[j];
-        var div = document.createElement('div');
-        div.className = 'gallery-img';
-
-        var img = document.createElement('img');
-        img.src = 'images/' + imgData.src;
-        img.alt = 'Campus photo ' + imgData.label;
-
-        (function(data, container) {
-            img.onerror = function() {
-                this.style.display = 'none';
-                var placeholder = document.createElement('div');
-                placeholder.className = 'placeholder';
-                placeholder.style.background = data.color;
-                placeholder.innerHTML = '<div class="icon">🕌</div><span>' + data.label + '</span>';
-                container.appendChild(placeholder);
-            };
-        })(imgData, div);
-
-        div.appendChild(img);
-        track.appendChild(div);
-    }
-})();
-
-// ============================================================
 // SCROLL REVEAL
 // ============================================================
-var revealElements = document.querySelectorAll('.glass-card, .section-title, .section-desc');
+var revealElements = document.querySelectorAll(
+    '.glass-card, .section-title, .section-desc, .rule-card, .resp-card');
 
 var revealObserver = new IntersectionObserver(function(entries) {
     for (var i = 0; i < entries.length; i++) {
