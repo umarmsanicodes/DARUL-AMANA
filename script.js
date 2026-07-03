@@ -118,4 +118,4 @@ if (heroContent) {
 }
 
 console.log('✅ DARUL-AMANA WAL IHSAN loaded successfully!');
-console.log('📞 WhatsApp: +2348101562471');
+console.log('📞 WhatsApp: +201229403525');
