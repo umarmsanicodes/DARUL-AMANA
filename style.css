@@ -43,6 +43,40 @@ body {
     overflow-x: hidden;
     line-height: 1.8;
     font-size: 17px;
+
+    /* space for border frame */
+    padding: 18px;
+}
+
+
+/* ========== GOLDEN DOUBLE BORDER FRAME (ONLY ADDITION) ========== */
+
+/* OUTER BORDER */
+body::before {
+    content: "";
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--gold);
+    border-radius: 18px;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* INNER BORDER */
+body::after {
+    content: "";
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    border: 1px solid var(--gold);
+    border-radius: 14px;
+    pointer-events: none;
+    z-index: 9998;
 }
 
 a {
